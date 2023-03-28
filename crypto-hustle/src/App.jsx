@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import CoinInfo from "./Components/coinInfo";
 import SideNav from "./Components/sideNav";
+import { useRoutes } from "react-router-dom";
+import Layout from '../routes/Layout';
+
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
 function App() {
@@ -39,9 +42,10 @@ function App() {
 
 
 
-
   return (
     <div className="whole-page">
+
+
       <h1>Crypto List</h1>
       <input
         type="text"
